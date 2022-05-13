@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40562" started-at="2022-05-11T17:33:28 IST" finished-at="2022-05-11T17:34:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="40562" started-at="2022-05-11T17:33:28 IST" finished-at="2022-05-11T17:34:08 IST">
+      <class name="org.testing.TestScripts.TC1">
+        <test-method status="PASS" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC1@568bf312]" name="Launch" is-config="true" duration-ms="15632" started-at="2022-05-11T17:33:28 IST" finished-at="2022-05-11T17:33:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method status="PASS" signature="Trending()[pri:0, instance:org.testing.TestScripts.TC1@568bf312]" name="Trending" duration-ms="20141" started-at="2022-05-11T17:33:43 IST" finished-at="2022-05-11T17:34:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Trending -->
+        <test-method status="PASS" signature="Close()[pri:0, instance:org.testing.TestScripts.TC1@568bf312]" name="Close" is-config="true" duration-ms="4742" started-at="2022-05-11T17:34:03 IST" finished-at="2022-05-11T17:34:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- org.testing.TestScripts.TC1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
