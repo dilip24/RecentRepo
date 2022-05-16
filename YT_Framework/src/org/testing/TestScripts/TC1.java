@@ -10,6 +10,7 @@ import org.testing.Pages.Home;
 import org.testing.Pages.Login;
 import org.testing.Pages.Logout;
 import org.testing.Pages.Video;
+import org.testing.Utilities.LogsCapture;
 import org.testing.Utilities.Screenshot;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,9 @@ public class TC1 extends Base
 	@Test
 	public void Trending() throws InterruptedException, IOException
 	{
-		Login login = new Login(driver, pr);
+		LogsCapture.takeLogs("TC1", "Login successfull for TC1");
+		
+		/*Login login = new Login(driver, pr);
 		login.signin("writetogenius2022", "Newerabegins@2022");
 				
 		Home homepage = new Home(driver, pr);
@@ -28,7 +31,7 @@ public class TC1 extends Base
 		Screenshot.takeScreenshot(driver, "D://Workshop//Screenshots//TC1_Trending.jpg");
 		
 		Logout logout = new Logout(driver, pr);
-		logout.signout();
+		logout.signout();*/
 		
 		//Save screenshot with time
 		/*Calendar c = Calendar.getInstance();

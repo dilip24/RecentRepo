@@ -5,8 +5,8 @@
     <classes>
       <class name="org.testing.TestScripts.TC1">
         <methods>
-          <include name="YouTube"/>
           <include name="Launch"/>
+          <include name="Trending"/>
           <include name="Close"/>
         </methods>
       </class> <!-- org.testing.TestScripts.TC1 -->
