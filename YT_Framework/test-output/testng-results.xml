@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="127184" started-at="2022-05-31T16:27:00 IST" finished-at="2022-05-31T16:29:07 IST">
+  <suite name="Default suite" duration-ms="183359" started-at="2022-05-31T17:23:18 IST" finished-at="2022-05-31T17:26:22 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="127184" started-at="2022-05-31T16:27:00 IST" finished-at="2022-05-31T16:29:07 IST">
-      <class name="org.testing.TestScripts.TC1">
-        <test-method status="PASS" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC1@3c153a1]" name="Launch" is-config="true" duration-ms="14164" started-at="2022-05-31T16:27:00 IST" finished-at="2022-05-31T16:27:14 IST">
+    <test name="Default test" duration-ms="183359" started-at="2022-05-31T17:23:18 IST" finished-at="2022-05-31T17:26:22 IST">
+      <class name="org.testing.TestScripts.TC6">
+        <test-method status="PASS" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC6@3c153a1]" name="Launch" is-config="true" duration-ms="63707" started-at="2022-05-31T17:23:19 IST" finished-at="2022-05-31T17:24:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method status="PASS" signature="Trending()[pri:0, instance:org.testing.TestScripts.TC1@3c153a1]" name="Trending" duration-ms="92420" started-at="2022-05-31T16:27:14 IST" finished-at="2022-05-31T16:28:46 IST">
+        <test-method status="PASS" signature="PlayAndComment()[pri:0, instance:org.testing.TestScripts.TC6@3c153a1]" name="PlayAndComment" duration-ms="102895" started-at="2022-05-31T17:24:22 IST" finished-at="2022-05-31T17:26:05 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Trending -->
-        <test-method status="PASS" signature="Close()[pri:0, instance:org.testing.TestScripts.TC1@3c153a1]" name="Close" is-config="true" duration-ms="20538" started-at="2022-05-31T16:28:46 IST" finished-at="2022-05-31T16:29:07 IST">
+        </test-method> <!-- PlayAndComment -->
+        <test-method status="PASS" signature="Close()[pri:0, instance:org.testing.TestScripts.TC6@3c153a1]" name="Close" is-config="true" duration-ms="16612" started-at="2022-05-31T17:26:05 IST" finished-at="2022-05-31T17:26:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-      </class> <!-- org.testing.TestScripts.TC1 -->
+      </class> <!-- org.testing.TestScripts.TC6 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
