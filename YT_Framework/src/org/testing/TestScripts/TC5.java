@@ -1,15 +1,18 @@
 package org.testing.TestScripts;
 
+import java.io.IOException;
+
 import org.testing.Base.Base;
 import org.testing.Pages.Login;
 import org.testing.Pages.Logout;
 import org.testing.Pages.Video;
+import org.testing.Utilities.Screenshot;
 import org.testng.annotations.Test;
 
 public class TC5 extends Base
 {
 	@Test
-	public void PlayAndSubscribe() throws InterruptedException
+	public void PlayAndSubscribe() throws InterruptedException, IOException
 	{
 		Login login = new Login(driver, pr);
 		login.signin("writetogenius2022", "Newerabegins@2022");
@@ -17,6 +20,10 @@ public class TC5 extends Base
 				
 		Video video = new Video(driver, pr);
 		video.PlayAndSubscribe();
+		Thread.sleep(2000);
+		
+		Screenshot.takeScreenshot(driver, "D://Workshop//Selenium//Screenshots//TC5_Subscribe.jpg");
+		Thread.sleep(2000);
 		
 		Logout logout = new Logout(driver, pr);
 		logout.signout();

@@ -2,11 +2,13 @@ package org.testing.TestScripts;
 
 import java.io.IOException;
 
+import org.testing.Assertions.Assertion1;
 import org.testing.Base.Base;
 import org.testing.Pages.Home;
 import org.testing.Pages.Login;
 import org.testing.Pages.Logout;
 import org.testing.Utilities.Screenshot;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC8 extends Base
@@ -16,24 +18,48 @@ public class TC8 extends Base
 	{
 		Login login = new Login(driver, pr);
 		login.signin("writetogenius2022", "Newerabegins@2022");
+		
+//		//Hard Assertion
+//		String expected_login = "https://www.youtube.com/";
+//		Assert.assertEquals(driver.getCurrentUrl(), expected_login);
+//		
+//		//Soft Assertion
+//		Assertion1.assert_1(expected_login, driver.getCurrentUrl(), "TC8");
+//		Thread.sleep(2000);
+		
+		Screenshot.takeScreenshot(driver, "D://Workshop//Selenium//Screenshots//TC8_Login.jpg");
 		Thread.sleep(2000);
-				
+		//LogsCapture.takeLogs("TC1", "Login successful for TC1");		
+		
 		Home homepage = new Home(driver, pr);
 		homepage.Library();
 		
-		Screenshot.takeScreenshot(driver, "D://Workshop//Screenshots//TC8_Library.jpg");
+//		//Hard Assertion
+//		String expected_library = "https://www.youtube.com/feed/library";
+//		Assert.assertEquals(driver.getCurrentUrl(), expected_library);
+//		
+//		//Soft Assertion
+//		Assertion1.assert_2(expected_library, driver.getCurrentUrl(), "TC8");
+//		Thread.sleep(2000);
+		
+		Screenshot.takeScreenshot(driver, "D://Workshop//Selenium//Screenshots//TC8_Library.jpg");
+		Thread.sleep(2000);
 		
 		Logout logout = new Logout(driver, pr);
 		logout.signout();
 		
+//		//Hard Assertion
+//		String expected_logout = "https://www.youtube.com/";
+//		Assert.assertEquals(driver.getCurrentUrl(), expected_logout);
+//		
+//		//Soft Assertion
+//		Assertion1.assert_3(expected_logout, driver.getCurrentUrl(), "TC8");
+//		Thread.sleep(2000);
 		
+		Screenshot.takeScreenshot(driver, "D://Workshop//Selenium//Screenshots//TC8_Logout.jpg");
+		Thread.sleep(2000);
 		
-		
-		
-		
-		
-		
-		
+
 		
 		/*driver.findElementByXPath("//yt-formatted-string[text()='Sign in']").click();
 		Thread.sleep(2000);

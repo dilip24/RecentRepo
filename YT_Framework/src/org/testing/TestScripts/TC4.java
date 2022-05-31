@@ -1,16 +1,19 @@
 package org.testing.TestScripts;
 
+import java.io.IOException;
+
 import org.testing.Base.Base;
 import org.testing.Pages.Home;
 import org.testing.Pages.Login;
 import org.testing.Pages.Logout;
 import org.testing.Pages.Video;
+import org.testing.Utilities.Screenshot;
 import org.testng.annotations.Test;
 
 public class TC4 extends Base
 {
 	@Test
-	public void PlayAndLike() throws InterruptedException
+	public void PlayAndLike() throws InterruptedException, IOException
 	{
 		Login login = new Login(driver, pr);
 		login.signin("writetogenius2022", "Newerabegins@2022");
@@ -18,6 +21,9 @@ public class TC4 extends Base
 				
 		Video video = new Video(driver, pr);
 		video.PlayAndLike();
+		
+		Screenshot.takeScreenshot(driver, "D://Workshop//Selenium//Screenshots//TC4_Like.jpg");
+		Thread.sleep(2000);
 		
 		Logout logout = new Logout(driver, pr);
 		logout.signout();

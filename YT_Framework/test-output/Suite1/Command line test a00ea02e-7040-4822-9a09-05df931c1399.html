@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>TestNG:  Command line test a00ea02e-7040-4822-9a09-05df931c1399</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test a00ea02e-7040-4822-9a09-05df931c1399</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 18 16:54:12 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>425 seconds (425352 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.testing.TestScripts.TC5.PlayAndSubscribe()'><b>PlayAndSubscribe</b><br>Test class: org.testing.TestScripts.TC5</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//yt-formatted-string[text()=&apos;Subscribe&apos;]&quot;}
+  (Session info: chrome=101.0.4951.67)
+  (Driver info: chromedriver=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;user&apos;, ip: &apos;192.168.43.57&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51566}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\lenovo\AppData\Local\Temp\scoped_dir10068_1800827631}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=101.0.4951.67, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: bce1a67acfcf41adbbc962c4a7c80d65
+*** Element info: {Using=xpath, value=//yt-formatted-string[text()=&apos;Subscribe&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.testing.Pages.Video.PlayAndSubscribe(Video.java:43)
+	at org.testing.TestScripts.TC5.PlayAndSubscribe(TC5.java:22)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testing.Runner.Runner.main(Runner.java:71)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1541525668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541525668'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//yt-formatted-string[text()=&apos;Subscribe&apos;]&quot;}
+  (Session info: chrome=101.0.4951.67)
+  (Driver info: chromedriver=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;user&apos;, ip: &apos;192.168.43.57&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51566}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\lenovo\AppData\Local\Temp\scoped_dir10068_1800827631}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=101.0.4951.67, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: bce1a67acfcf41adbbc962c4a7c80d65
+*** Element info: {Using=xpath, value=//yt-formatted-string[text()=&apos;Subscribe&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.testing.Pages.Video.PlayAndSubscribe(Video.java:43)
+	at org.testing.TestScripts.TC5.PlayAndSubscribe(TC5.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testing.Runner.Runner.main(Runner.java:71)
+</pre></div></td>
+<td>27</td>
+<td>org.testing.TestScripts.TC5@30a3107a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.testing.TestScripts.TC8.Library()'><b>Library</b><br>Test class: org.testing.TestScripts.TC8</td>
+<td></td>
+<td>36</td>
+<td>org.testing.TestScripts.TC8@52feb982</td></tr>
+<tr>
+<td title='org.testing.TestScripts.TC6.PlayAndComment()'><b>PlayAndComment</b><br>Test class: org.testing.TestScripts.TC6</td>
+<td></td>
+<td>52</td>
+<td>org.testing.TestScripts.TC6@33c7e1bb</td></tr>
+<tr>
+<td title='org.testing.TestScripts.TC2.History()'><b>History</b><br>Test class: org.testing.TestScripts.TC2</td>
+<td></td>
+<td>38</td>
+<td>org.testing.TestScripts.TC2@1563da5</td></tr>
+<tr>
+<td title='org.testing.TestScripts.TC1.Trending()'><b>Trending</b><br>Test class: org.testing.TestScripts.TC1</td>
+<td></td>
+<td>41</td>
+<td>org.testing.TestScripts.TC1@23faf8f2</td></tr>
+<tr>
+<td title='org.testing.TestScripts.TC3.Subscriptions()'><b>Subscriptions</b><br>Test class: org.testing.TestScripts.TC3</td>
+<td></td>
+<td>36</td>
+<td>org.testing.TestScripts.TC3@2bbf4b8b</td></tr>
+<tr>
+<td title='org.testing.TestScripts.TC7.WatchLater()'><b>WatchLater</b><br>Test class: org.testing.TestScripts.TC7</td>
+<td></td>
+<td>42</td>
+<td>org.testing.TestScripts.TC7@34c4973</td></tr>
+</table><p>
+</body>
+</html>
